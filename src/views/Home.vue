@@ -3,6 +3,7 @@
         <h1>All Destinations</h1>
         <div class="destinations">
             <router-link
+                class="destination"
                 v-for="destination in destinations"
                 :key="destination.id"
                 :to="{name: 'destination.show', params: {id: destination.id, slug: destination.slug}}"
